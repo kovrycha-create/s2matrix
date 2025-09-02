@@ -43,9 +43,15 @@ export const CloseIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export const ChevronIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const ChevronDownIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg {...iconProps} {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path d="m6 9 6 6 6-6"/>
+    </svg>
+);
+
+export const ChevronUpIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg {...iconProps} {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="m18 15-6-6-6 6"/>
     </svg>
 );
 

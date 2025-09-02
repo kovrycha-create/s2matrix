@@ -1,11 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Speech Matrix</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Speech Matrix">
+    <meta name="description" content="A reactive Matrix-style animation driven by your voice. Speak into your microphone and watch your words cascade down the screen as digital rain. A voice-powered generative art experience." />
+    <meta name="keywords" content="speech recognition, matrix effect, voice-controlled, generative art, audio visualization, react, typescript, web speech api, digital rain, code falling" />
+    <meta name="author" content="Deffy" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://deffy.me/s2matrix/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deffy.me/s2matrix/" />
+    <meta property="og:title" content="Speech Matrix" />
+    <meta property="og:description" content="A reactive Matrix-style animation driven by your voice. Speak and watch the code fall." />
+    <meta property="og:image" content="https://deffy.me/s2matrix/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Speech Matrix" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://deffy.me/s2matrix/" />
+    <meta property="twitter:title" content="Speech Matrix" />
+    <meta property="twitter:description" content="A reactive Matrix-style animation driven by your voice. Speak and watch the code fall." />
+    <meta property="twitter:image" content="https://deffy.me/s2matrix/twitter-image.png" />
+    
+    <!-- PWA / Mobile Meta Tags -->
+    <meta name="theme-color" content="#00ff00" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Speech Matrix" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* For custom scrollbars in settings panel */
@@ -26,8 +56,9 @@
   <script type="importmap">
 {
   "imports": {
+    "react": "https://esm.sh/react@^19.0.0-rc.0",
+    "react-dom/client": "https://esm.sh/react-dom@^19.0.0-rc.0/client",
     "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
   }
 }

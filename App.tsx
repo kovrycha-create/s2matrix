@@ -14,6 +14,7 @@ import WelcomeModal from './components/WelcomeModal';
 const App: React.FC = () => {
   const [settings, setSettings] = usePersistentState<MatrixSettings>('matrix-settings', DEFAULT_SETTINGS);
   const [isSettingsVisible, setIsSettingsVisible] = useState(false);
+  const [isControlsVisible, setIsControlsVisible] = useState(true);
   const [showWelcome, setShowWelcome] = useState(true);
   const [mousePosition, setMousePosition] = useState<{ x: number, y: number } | null>(null);
 
@@ -141,6 +142,8 @@ const App: React.FC = () => {
         onToggleSettings={() => setIsSettingsVisible(!isSettingsVisible)}
         onCycleMode={cycleMode}
         currentMode={settings.mode}
+        isControlsVisible={isControlsVisible}
+        onToggleControlsVisibility={() => setIsControlsVisible(prev => !prev)}
       />
 
       <SettingsPanel

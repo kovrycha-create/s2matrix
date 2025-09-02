@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { MatrixSettings } from '../types';
 
@@ -47,7 +46,7 @@ const CHARACTER_SETS = {
   binary: '01',
   numbers: '0123456789',
   runes: 'ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛟᛞ',
-  ascii: '!"#$%&\\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\\]^_\\\`abcdefghijklmnopqrstuvwxyz{|}~',
+  ascii: '!"#$%&\\\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\\\]^_\`abcdefghijklmnopqrstuvwxyz{|}~',
   'js-code': '<>(){}[].,;\\'"=/+-%*&|!?^~',
 };
 

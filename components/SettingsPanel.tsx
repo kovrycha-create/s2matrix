@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { MatrixSettings, DisplayMode } from '../types';
-import { CloseIcon, ChevronIcon, ResetIcon } from './icons/Icons';
+import { CloseIcon, ChevronDownIcon, ResetIcon } from './icons/Icons';
 import { PRESETS } from '../presets';
 import { COLOR_THEMES } from '../themes';
 import { CHARACTER_SET_NAMES, DEFAULT_SETTINGS } from '../constants';
@@ -55,7 +55,7 @@ const CollapsibleSection: React.FC<{title: string; children: React.ReactNode; de
       <div className="py-2 border-t border-green-500/20">
         <button onClick={() => setIsOpen(!isOpen)} className="w-full flex justify-between items-center py-2 text-left hover:bg-green-500/10 rounded-md px-2 -mx-2">
           <h4 className="text-md font-semibold text-green-300">{title}</h4>
-          <ChevronIcon className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+          <ChevronDownIcon className={`w-5 h-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
         </button>
         <div className={`grid transition-all duration-500 ease-in-out ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
             <div className="overflow-hidden">
