@@ -1,0 +1,7 @@
+{
+  "name": "Speech Matrix",
+  "description": "A reactive Matrix-style animation driven by your voice. Speak and watch the code fall. This is an enhanced version of a vanilla JS project, rebuilt with React, TypeScript, and Tailwind CSS for a superior UI/UX and modern codebase.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
